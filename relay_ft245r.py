@@ -9,7 +9,7 @@ import ftd2xx as ftd
 
 
 class Relay():
-    def __init__(self,relay="FT245R",mode="dic",config=os.path.dirname(os.path.abspath(__file__))+'\\config.json'):
+    def __init__(self,relay="FT245R",mode="json",config=os.path.dirname(os.path.abspath(__file__))+'\\config.json'):
         self.initialize_modem()
 
         # relay turn on on bit format (relay 1, relay2, relay3... relay 8)
